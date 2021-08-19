@@ -1,0 +1,85 @@
+main .main_conteneur {
+    display: flex;
+    flex-direction: row;
+}
+
+.gauche {
+    width: 55%;
+}
+
+.gauche p {
+    margin-top: 0.5rem;
+}
+
+.desc {
+    border-style: groove;
+    border-width: 2px;
+    border-color: black;
+    background-color: white;
+    color: black;
+    padding: 3px 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.droite {
+    margin-left: 20px;
+}
+
+.droite p {
+    margin-top: 0.5rem;
+}
+
+.droite>p:first-of-type {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.btn_echange {
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    padding: 5px;
+    border-style: outset;
+    border-width: 3px;
+    border-radius: 5px;
+    background-color: var(--Fond_Clair);
+    text-decoration: none;
+}
+
+.btn_echange:hover {
+    background-color: green;
+    transition: 0.3s;
+}
+
+.cadre1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.cadre2 {
+    margin-left: 1.5rem;
+}
+
+.cadre2 img {
+    vertical-align: middle;
+}
+
+.pUnFichier {
+    text-align: left;
+}
+
+.imgfile {
+    vertical-align: middle;
+    margin-left: 0px;
+    margin-right: 2px;
+}
+
+.UnFichier {
+    padding-left: 1.2rem;
+    padding-right: .5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    border: solid 1px black;
+}

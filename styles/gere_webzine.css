@@ -1,0 +1,13 @@
+.form_cont {
+    margin-top: 1.2rem;
+}
+
+.form_cont p {
+    margin: 1rem;
+}
+
+.form_res {
+    border-style: solid;
+    border-width: 1px;
+    padding: 0.5rem;
+}

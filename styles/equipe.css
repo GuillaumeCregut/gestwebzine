@@ -1,0 +1,74 @@
+main .main_conteneur {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.liste_equipe {
+    width: 30%;
+}
+
+.ajout_membre {
+    width: 70%;
+    margin-left: 10px;
+    padding-left: 100px;
+}
+
+.supprime {
+    text-decoration: line-through;
+}
+
+thead {
+    text-align: center;
+}
+
+tr>td {
+    padding-left: 15px;
+}
+
+tbody {
+    text-align: center;
+}
+
+.mail {
+    background-image: url(../img/mail.png);
+    background-repeat: no-repeat;
+    width: 27px;
+    height: 30px;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.ajout_membre p {
+    margin-top: 0.7rem;
+}
+
+.mailbtn {
+    width: 100%;
+    height: 100%;
+}
+
+.administrateur {
+    color: white;
+    font-weight: bold;
+}
+
+.pigiste {
+    color: var(--Pigiste);
+    font-weight: bold;
+}
+
+.grahiste {
+    color: var(--Graphiste);
+    font-weight: bold;
+}
+
+.redacchef {
+    color: var(--Administrateur);
+    font-weight: bold;
+}
+
+.clic {
+    cursor: pointer;
+}

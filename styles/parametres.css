@@ -1,0 +1,30 @@
+p {
+    margin-top: 1.1rem;
+}
+
+.form_cont {
+    margin: 5px;
+    border: solid 1px black;
+    padding: 5px;
+}
+
+.conteneur_global {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cont_liste {
+    width: 30%;
+}
+
+.cont_liste ul {
+    background-color: var(--Fond_Champ);
+    text-align: center;
+    color: black;
+    list-style-type: none;
+}
+
+.cont_param p {
+    text-align: center;
+}

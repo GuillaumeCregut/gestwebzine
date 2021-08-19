@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Défintions des couleurs*/
+
+:root {
+    --Fond_Sombre: #354A2F;
+    --Fond_Menu: #5b904c;
+    --Fond_Clair: #2C8C69;
+    --Fond_Accueil: #DFEEE7;
+    --Fond_Champ: #C5E0D3;
+    --Erreur: rgb(242, 44, 55);
+    --Administrateur: lightsalmon;
+    --Pigiste: lightblue;
+    --Graphiste: lightgreen;
+    --Article-MEP: #434F11;
+    --Article-EnCours: #2C497F;
+    --Article-Termine: #2E5B0B;
+    --Article-Vierge: #7D617A;
+    --WebZine_Archive: white;
+    --EtatWarning: #b3b600;
+    --ArticleFini: rgb(58, 144, 98);
+    --ArticlePret: rgb(26, 190, 21);
+}
+
+
+/*temporaire */
+
+a {
+    color: white;
+}
+
+.main_conteneur {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+body {
+    background-color: var(--Fond_Sombre);
+    color: white;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+
+/*Menu de navigation */
+
+nav>ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav>ul>li {
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    padding: 5px;
+    border-style: outset;
+    border-width: 3px;
+    border-radius: 5px;
+    background-color: var(--Fond_Clair);
+}
+
+nav>ul>li:hover {
+    background-color: green;
+    transition: 0.3s;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+}
+
+
+/* Fin menu de navigation */
+
+footer {
+    margin-top: 20px;
+    position: relative;
+    padding-top: 5px;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--Fond_Clair);
+}
+
+header .user {
+    color: white;
+    text-align: right;
+}
+
+.commentaire {
+    color: white;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}

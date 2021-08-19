@@ -1,0 +1,13 @@
+.article {
+    margin: 1.5rem;
+    padding: 0.5rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    background-color: var(--Fond_Clair);
+    width: 30%;
+}
+
+.head {
+    font-weight: bold;
+}

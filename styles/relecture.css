@@ -1,0 +1,63 @@
+.paginage {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.article {
+    padding: 5px;
+    border: solid 1px black;
+    cursor: pointer;
+    display: inline-block;
+    background-color: var(--Fond_Clair);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.article:hover {
+    background-color: green;
+}
+
+.header_article {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3px;
+}
+
+.img_header {
+    margin-left: 10px;
+    width: 20px;
+    height: 18px;
+    align-self: flex-end;
+}
+
+.img_header_file {
+    background-image: url('../img/fichier.png');
+    background-repeat: no-repeat;
+}
+
+.img_lock_file {
+    background-image: url('../img/b_lock.png');
+    background-repeat: no-repeat;
+}
+
+.img_unlock_file {
+    background-image: url('../img/b_unlock.png');
+    background-repeat: no-repeat;
+}
+
+.info_art {
+    font-weight: bold;
+    color: var(--Fond_Champ);
+}
+
+.bulle {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: solid 1px black;
+    vertical-align: bottom;
+}

@@ -1,0 +1,125 @@
+.haut {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.info_art {
+    width: 30%;
+}
+
+
+/*Tableau des utilisateurs et utilisateurs */
+
+.utilisateurs {
+    width: 70%;
+}
+
+
+/*Tableau */
+
+.TabUtilisateur {
+    width: 100%;
+    border: solid 1px black;
+}
+
+.TabUtilisateur td,
+.TabUtilisateur th {
+    border: solid 1px black;
+}
+
+.col1 {
+    width: 30%;
+}
+
+.utilisateurs_box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+
+/*Utilisateurs*/
+
+.utilisateur {
+    border: solid;
+    border-width: 1px;
+    border-color: black;
+    background-color: var(--Fond_Clair);
+    border-radius: 3px;
+    margin: 3px;
+    padding: 3px;
+    cursor: grab;
+}
+
+
+/* Conteneur de la messagerie */
+
+.echange {
+    width: 100%;
+}
+
+
+/*Messagerie */
+
+.liste_message {
+    border: solid 1px black;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.message {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 3px;
+    margin: 3px;
+}
+
+.message:hover {
+    background-color: var(--Fond_Clair);
+}
+
+.auteur {
+    width: 30%;
+    padding: 3px;
+    margin: 5px;
+}
+
+.contenu {
+    width: 70%;
+    padding: 3px;
+    margin: 5px;
+}
+
+#texte_message {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.redaction p {
+    margin: 5px;
+}
+
+
+/*Ajout V1.0B */
+
+.case_relecteur {
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    margin-right: 1rem;
+}
+
+.espace {
+    margin-top: 1rem;
+}
+
+.cacher {
+    display: none;
+}

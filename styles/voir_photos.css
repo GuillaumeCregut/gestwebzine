@@ -1,0 +1,33 @@
+.resume_article {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.photos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.photo {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    width: 340px;
+    text-align: center;
+    margin: 1rem;
+    padding: 10px;
+}
+
+.photo p {
+    margin-top: 0.5rem;
+}
+
+.envoi p {
+    margin-top: 0.5rem;
+}
+
+.cacher {
+    display: none;
+}

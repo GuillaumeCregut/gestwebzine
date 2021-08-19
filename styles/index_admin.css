@@ -1,0 +1,73 @@
+.menu_nav {
+    margin-top: 1rem;
+}
+
+.menu_nav .menu {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+}
+
+.menu_nav .menu>li>a {
+    text-decoration: none;
+    color: var(--Police_Text);
+    padding: 0.5em;
+    display: inline-block;
+    margin: 0.1em;
+}
+
+.menu_nav .menu {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu_nav .menu>li {
+    position: relative;
+    /* padding-right:  20px;*/
+    background-color: var(--Menu_Idle);
+    transition: .3s;
+    border: solid 1px black;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 0;
+}
+
+.menu_nav .menu>li:hover .sousmenu {
+    display: block;
+}
+
+.menu_nav .menu>li:hover {
+    background-color: var(--Fond_Clair);
+}
+
+.menu_nav .sousmenu {
+    display: none;
+    z-index: 2;
+    position: absolute;
+    top: 102%;
+    left: 0px;
+    background-color: var(--Fond_Menu);
+    list-style: none;
+    align-items: center;
+}
+
+.menu_nav .menulien {
+    cursor: default;
+}
+
+.menu_nav .sousmenu>li>a {
+    text-decoration: none;
+    display: block;
+    background-color: var(--Fond_Menu);
+    padding: 0.5em;
+    white-space: nowrap;
+    transition: .3s;
+    width: 100%;
+    color: var(--Police_Text);
+}
+
+.menu_nav .sousmenu>li>a:hover {
+    background-color: var(--Fond_Clair);
+    border-style: none;
+}

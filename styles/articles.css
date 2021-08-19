@@ -1,0 +1,117 @@
+main .main_conteneur {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.paginage {
+    width: 45%;
+    text-align: center;
+}
+
+.paginage>p {
+    margin-bottom: 10px;
+}
+
+.article {
+    padding: 5px;
+    border: solid 1px black;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5px;
+}
+
+.article:hover {
+    background-color: green;
+    transition: 0.3s;
+}
+
+.header_article {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3px;
+}
+
+.img_header {
+    margin-left: 10px;
+    width: 20px;
+    height: 18px;
+    align-self: flex-end;
+}
+
+.img_lock_file {
+    background-image: url('../img/b_lock.png');
+    background-repeat: no-repeat;
+}
+
+.img_unlock_file {
+    background-image: url('../img/b_unlock.png');
+    background-repeat: no-repeat;
+}
+
+.img_header_file {
+    background-image: url('../img/fichier.png');
+    background-repeat: no-repeat;
+}
+
+.img_header_fileI {
+    background-image: url('../img/fichiertl.png');
+    background-repeat: no-repeat;
+}
+
+.img_header_photo {
+    background-image: url('../img/photo.png');
+    background-repeat: no-repeat;
+}
+
+.article_dispo {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.creerarticle p {
+    margin-top: 10px;
+}
+
+.Vierge {
+    background-color: var(--Article-Vierge);
+}
+
+.EnCours {
+    background-color: var(--Article-EnCours);
+}
+
+.Termine {
+    background-color: var(--Article-Termine);
+}
+
+.MEP {
+    background-color: var(--Article-MEP);
+}
+
+.Finalise {
+    background-color: var(--ArticleFini);
+}
+
+.info_art {
+    font-weight: bold;
+    color: var(--Fond_Champ);
+}
+
+.bulle {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: solid 1px black;
+    vertical-align: bottom;
+}
+
+.autre_auteur_cache {
+    display: none;
+}
