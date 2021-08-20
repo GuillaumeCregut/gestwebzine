@@ -132,3 +132,24 @@ function archive(item) {
         }
     }
 }
+//Gestion des events
+//Articles
+let Usagers = document.getElementsByClassName('article');
+Array.prototype.forEach.call(Usagers, function(el) {
+    el.addEventListener('dragstart', function(event) {
+        drag(event);
+    });
+    el.addEventListener('dblclick', function(e) {
+        editArticle(this.id);
+    })
+});
+//Dépots
+let Depots = document.getElementsByClassName('conteneur_article');
+Array.prototype.forEach.call(Depots, function(el) {
+    el.addEventListener('drop', function(event) {
+        drop(event);
+    });
+    el.addEventListener('dragover', function(event) {
+        allowDrop(event);
+    });
+});

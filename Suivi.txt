@@ -336,5 +336,7 @@ Version 1.0A 24/06/2021
     ->Modification voir_photos.js
         ->Déplacement de la gestion des events dans le js
         =>Faire tests
-    
+    ->Modification webzine.tpl
+    ->Modification wezine.js
+        ->Déplacement de la gestion des events dans le js
 

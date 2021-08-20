@@ -77,9 +77,9 @@
                 </form>
                 <div class="appartient articles_item">
                     <p>Listes des articles du Webzine</p>
-                    <div class="conteneur_article" id="article_web" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="conteneur_article" id="article_web">
                         {if isset($TabArticlesWebzine)} {foreach from=$TabArticlesWebzine item=articles}
-                        <div class="article {$articles.Classe}" draggable="true" ondragstart="drag(event)" id="{$articles.id_article}" ondblclick="editArticle('{$articles.id_article}') ">
+                        <div class="article {$articles.Classe}" draggable="true" id="{$articles.id_article}">
                             <div class="header_article">
                                 <div class="titre_article"><span class="info_art">{$articles.titre}</span></div>
                                 <div class="img_header {$articles.class_file}">&nbsp;</div>
@@ -104,9 +104,9 @@
                 </div>
                 <div class="dispo articles_item">
                     <p>Les des articles disponibles</p>
-                    <div class="conteneur_article" id="article_dispo" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="conteneur_article" id="article_dispo">
                         {if isset($TabArticlesDispo)} {foreach from=$TabArticlesDispo item=articlesd}
-                        <div class="article {$articlesd.Classe}" draggable="true" ondragstart="drag(event)" id="{$articlesd.id_article}" ondblclick="editArticle('{$articlesd.id_article}') ">
+                        <div class="article {$articlesd.Classe}" draggable="true" id="{$articlesd.id_article}">
                             <div class="header_article">
                                 <div class="titre_article"><span class="info_art">{$articlesd.titre}</span></div>
                                 <div class="img_header {$articlesd.class_file}">&nbsp;</div>
