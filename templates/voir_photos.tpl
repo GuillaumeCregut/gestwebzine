@@ -43,7 +43,7 @@
                     <p><progress id="progressBarTexte" value="0" max="100" style="width:300px;"></progress></p>
                     <p id="statusText" class="pUnfichier"></p>
                     <p id="loaded_n_totalText" class="pUnfichier"></p>
-                    <p><input type="button" value="Envoyer le(s) fichier(s)" onclick="uploadFile(0)"></p>
+                    <p><input type="button" value="Envoyer le(s) fichier(s)" id="uploadFileBtn"></p>
                 </form>
             </div>
 

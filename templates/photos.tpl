@@ -31,7 +31,7 @@
             <div class="main_conteneur">
                 <div>
                     {if isset($TabArticles)} {foreach from=$TabArticles item=infos}
-                    <div class="article" ondblclick="ouvre_article({$infos.id})">
+                    <div class="article" id="{$infos.id}">
                         <p><span class="head"> Titre de l'article :</span> {$infos.titre}</p>
                         <p><span class="head">Type d'article :</span> {$infos.typeA}</p>
                         <p><span class="head">Auteur de l'article :</span> {$infos.auteur}</p>

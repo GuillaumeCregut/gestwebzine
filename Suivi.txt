@@ -327,5 +327,14 @@ Version 1.0A 24/06/2021
     ->Modification mep_article.js
         ->Déplacement de la gestion des events dans le js
         =>Vérifier le fonctionnement correct dans mise en page (le pop up)
-
+->Push sur Github
+20/08/2021
+    ->Modification photos.tpl
+    ->Modification photos.js
+        ->Déplacement de la gestion des events dans le js
+    ->Modification voir_photos.tpl
+    ->Modification voir_photos.js
+        ->Déplacement de la gestion des events dans le js
+        =>Faire tests
+    
 

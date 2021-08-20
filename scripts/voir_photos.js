@@ -9,7 +9,7 @@ function uploadFile() {
     var i = 0;
     while (i < nbFichiers) {
         var fichier = file[i];
-        console.log(fichier.name);
+        // console.log(fichier.name);
         formdata.append("file1[]", fichier);
         i++;
     }
@@ -36,19 +36,19 @@ function progressHandler(event) {
 function completeHandler(event) {
     //Décodage du retour JSON
     let RetourJson = event.target.responseText;
-    console.log(RetourJson);
+    // console.log(RetourJson);
     let Tabretour = JSON.parse(RetourJson);
-    console.log(Tabretour);
+    // console.log(Tabretour);
     let EtatRetour = Tabretour[0]['Retour'];
     if (EtatRetour > 0) {
         _("valide_span").innerHTML = "Oui";
     }
     console.log('Etat : ' + EtatRetour);
     let TexteRetour = Tabretour[0]['Texte'];
-    console.log('Texte : ' + TexteRetour);
+    //console.log('Texte : ' + TexteRetour);
     _("statusText").innerHTML = TexteRetour;
     // _("progressBarTexte").value = 0;
-    console.log(event.target.responseText);
+    //console.log(event.target.responseText);
     _("loaded_n_totalText").innerHTML = '';
 }
 
@@ -81,7 +81,7 @@ function creer_table(coche) {
 
 function DoneTable(event) {
     let RetourJson = event.target.responseText;
-    console.log(RetourJson);
+    //console.log(RetourJson);
     let Tabretour = JSON.parse(RetourJson);
     let EtatRetour = Tabretour[0]['Retour'];
     if (EtatRetour > 0) {
@@ -90,3 +90,5 @@ function DoneTable(event) {
         _('envoi_box').classList.remove('cacher'); //Passe à visible
     }
 }
+let LeBouton = document.getElementById('uploadFileBtn');
+LeBouton.addEventListener('click', uploadFile);
