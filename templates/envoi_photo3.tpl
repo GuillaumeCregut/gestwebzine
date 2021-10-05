@@ -18,6 +18,6 @@
     </header>
     <main>
         <div class="main_conteneur">
-            <p>Une erreur c'est produite, veuillez nousu en excusez.</p>
+            <p>Une erreur c'est produite, veuillez nous en excusez.</p>
         </div>
     </main>
