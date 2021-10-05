@@ -52,6 +52,7 @@
             $TabVal=array(':id'=> $Id_Article);
             $row=$Conn->sql_fetch_all_prepared($TabVal,$SQLS);
             debug_tab($row,$Debug);
+            $MDP=ltrim($MDP);
             $B_MDP=$row[0]['mdp_photo'];
             if($MDP==$B_MDP)
             {
