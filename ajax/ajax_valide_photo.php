@@ -61,12 +61,16 @@
                         debug_tab($TabFiles,$Debug);
                         //Forge du chemin des photos validées
                         $CheminBaseZip='../'.$CheminBaseFichier.$CheminPhotos.$Repertoire_photo.$Rep_Photo_Valide;
+                        $SQLS=$SQL_Add_Histo;
+                        $Id_User=$_SESSION['Utilisateur'];
+                        $TabHisto=array(':user'=>$Id_User, ':action'=>Histo_EnvoiMail, ':quoi'=>$CheminBaseZip);
+                        $Conn->ExecProc($TabHisto,$SQLS);
                         set_error_handler("WarningHandler",E_WARNING);
                         try
                         {
                             if(!is_dir($CheminBaseZip))
                             {
-                                if(!mkdir($CheminBaseZip,0666))
+                                if(!mkdir($CheminBaseZip,0777))
                                 {
                                     array_push($TabJson,array('Retour'=>0,'Texte'=>"Erreur création répertoire"));
                                     echo json_encode($TabJson);

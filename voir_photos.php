@@ -67,7 +67,7 @@
                     }
                     else
                     {
-                        $PhotoValide='non';
+                        $PhotoValide='non'; 
                     }
                     $moteur->assign('Valide',$PhotoValide);
                     $Chemin_Article=$row[0]['chemin_photo'];
