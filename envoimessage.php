@@ -11,6 +11,7 @@
     include "include/sql.inc.php";
     //Démarrage de la session
     session_start();
+    $Debug = false;
     //On initialise le moteur de template
     $moteur=new Smarty();
     //Connexion àla base de données
@@ -49,9 +50,29 @@
             $SQLS=$SQL_Get_Param_Mail;
             $row=$Conn->sql_fetch_all($SQLS);
             $adresse=$row[0]['Value_Param_S'];
-            $Entete="From: $adresse \n";
-		    $Entete.="Reply-to: $adresse\n";
+            if(!$Debug)
+            {
+                $Entete="MIME-Version: 1.0\r\n";
+                $Entete.="Content-type: text/html; charset=iso-8859-1\r\n";
+                $Entete.="TO: $dest\r\n";
+                $Entete.="From: $adresse\r\n";
+                $Entete.="Reply-to: $adresse\r\n";
+            }
+           /* 
+            $Entete.="MIME-Version: 1.0\n";
+            $Entete.="Content-type: text/html; charset=iso-8859-1";*/
+            //Essai temporaire
+            else
+            {
+                $TabTest[] = 'MIME-Version: 1.0';
+                $TabTest[] = 'Content-type: text/html; charset=iso-8859-1';
+                $TabTest[] ="TO: $dest";
+                $TabTest[]="From: $adresse";
+                $TabTest[].="Reply-to: $adresse";
+                $Entete=implode("\r\n",$TabTest);
+            }
             if(@mail($dest,$LeSujet,$LeMessage,$Entete))
+           // if(@mail($dest,$LeSujet,$LeMessage,$Entete))
             {
                 //Historisation
                 $SQLS=$SQL_Add_Histo;
