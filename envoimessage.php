@@ -2,7 +2,7 @@
     /* * * * * * * * * * * * * * * * * * * * * * * */
     /* Gestion Webzine v0.4                        */
     /* Date création : 25/03/2021                  */
-    /* Dernière modification : 27/04/2021          */
+    /* Dernière modification : 21/10/2021          */
     /* * * * * * * * * * * * * * * * * * * * * * * */
     //Inclusion des fichiers nécessaires
     include "include/config.inc.php";
