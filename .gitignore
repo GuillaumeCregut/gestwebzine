@@ -1,9 +1,11 @@
-templates_c/*
-fichiers/*
+/templates_c
 readme.txt
 suivi.txt
 test.php
 testeur_ajax.html
-admin/templates_c/*
-include/connecteur.php
+/admin/templates_c
+include/connecteur.inc.php
 include/conf_dif/* 
+/espaces/*
+
+
